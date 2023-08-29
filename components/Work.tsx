@@ -23,7 +23,7 @@ function Work() {
 						alt="pivotpointbms"
 						className="rounded-md mb-3"
 					/>
-					<span className="bg-blue-700/40 p-1 rounded text-blue-200">
+					<span className="bg-blue-200/50 dark:bg-blue-700/40 p-1 rounded text-blue-600 dark:text-blue-200">
 						Jan 2023 - Present
 					</span>
 					<h6 className="text-lg font-semibold">PivotPoint BMS</h6>
@@ -35,7 +35,7 @@ function Work() {
 						alt="pivotpointbms"
 						className="rounded-md mb-3"
 					/>
-					<span className="bg-blue-700/40 p-1 rounded text-blue-200">
+					<span className="bg-blue-200/50 dark:bg-blue-700/40 p-1 rounded text-blue-600 dark:text-blue-200">
 						Jan 2022 - Jul 2022
 					</span>
 					<h6 className="text-lg font-semibold">Clinic Management System</h6>
@@ -52,7 +52,7 @@ function Work() {
 						alt="pivotpointbms"
 						className="rounded-md mb-3"
 					/>
-					<span className="bg-blue-700/40 p-1 rounded text-blue-200">
+					<span className="bg-blue-200/50 dark:bg-blue-700/40 p-1 rounded text-blue-600 dark:text-blue-200">
 						Nov 2022 - Jan 2023
 					</span>
 					<h6 className="text-lg font-semibold">Bazzar</h6>
@@ -70,11 +70,11 @@ function Work() {
 						alt="pivotpointbms"
 						className="rounded-md mb-3"
 					/>
-					<span className="bg-blue-700/40 p-1 rounded text-blue-200">
+					<span className="bg-blue-200/50 dark:bg-blue-700/40 p-1 rounded text-blue-600 dark:text-blue-200">
 						Oct 2022
 					</span>
 					<h6 className="text-lg font-semibold">Tes Close</h6>
-					<p>A clone of Tes website with react tree 3D animations.</p>
+					<p>A clone of Tes website with react three 3D animations.</p>
 				</Link>
 				<Link href="https://github.com/YanissGnz/macos" target="_blank">
 					<Image
@@ -82,7 +82,7 @@ function Work() {
 						alt="pivotpointbms"
 						className="rounded-md mb-3"
 					/>
-					<span className="bg-blue-700/40 p-1 rounded text-blue-200">
+					<span className="bg-blue-200/50 dark:bg-blue-700/40 p-1 rounded text-blue-600 dark:text-blue-200">
 						Oct 2022
 					</span>
 					<h6 className="text-lg font-semibold">MacOS Clone</h6>
@@ -91,18 +91,18 @@ function Work() {
 				<Link href="https://github.com/YanissGnz/Home_Art" target="_blank">
 					<Image
 						src={homeArtShot}
-						alt="pivnicShototpointbms"
+						alt="home art shot"
 						className="rounded-md mb-3"
 					/>
-					<span className="bg-blue-700/40 p-1 rounded text-blue-200">
+					<span className="bg-blue-200/50 dark:bg-blue-700/40 p-1 rounded text-blue-600 dark:text-blue-200">
 						Jan 2021- Dec 2021
 					</span>
 					<h6 className="text-lg font-semibold">Home Art</h6>
 					<p>An E-commerce Website for home appliances.</p>
 				</Link>
 			</div>
-			<div className="-top-20 left-20 flex place-items-center absolute h-[200px] w-[280px] rounded-full bg-gradient-radial from-white to-transparent blur-2xl after:absolute after:-z-20 after:h-[280px] after:w-[240px] after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after dark:bg-gradient-to-br dark:from-transparent dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 -z-20"></div>
-			<div className="top-3/4 right-20 flex place-items-center absolute  rounded-full  to-transparent -z-20 h-[380px] w-[340px] translate-x-1/3 bg-gradient-conic from-sky-200 via-blue-200 blur-2xl dark:bg-gradient-to-br dark:to-blue-700/10 dark:from-sky-900 dark:via-[#0141ff]/40"></div>
+			<div className="-top-20 left-20 flex place-items-center absolute h-[200px] w-[280px] rounded-full bg-gradient-radial from-white to-transparent blur-2xl after:absolute after:-z-20 after:h-[280px] after:w-[240px] after:bg-gradient-conic after:from-sky-300 after:via-blue-300 after:blur-2xl after dark:bg-gradient-to-br dark:from-transparent dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 -z-20"></div>
+			<div className="top-3/4 right-20 flex place-items-center absolute  rounded-full  to-transparent -z-20 h-[380px] w-[340px] translate-x-1/3 bg-gradient-conic from-sky-300 via-blue-300 blur-2xl dark:bg-gradient-to-br dark:to-blue-700/10 dark:from-sky-900 dark:via-[#0141ff]/40"></div>
 		</div>
 	);
 }

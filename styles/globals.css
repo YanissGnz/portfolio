@@ -7,5 +7,5 @@ html {
 }
 
 body {
-	@apply bg-black text-white overflow-x-hidden w-screen;
+	@apply bg-white text-black dark:bg-black dark:text-white overflow-x-hidden w-screen;
 }

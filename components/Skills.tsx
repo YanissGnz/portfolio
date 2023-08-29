@@ -3,7 +3,7 @@ import React from "react";
 function Skills() {
 	return (
 		<div className="mt-20 flex flex-col items-center gap-10 w-screen px-5 md:px-16 relative">
-			<div className="top-2 left-1 flex place-items-center absolute h-[100px] w-[180px] rounded-full bg-gradient-radial from-white to-transparent blur-2xl after:absolute after:-z-20 after:h-[280px] after:w-[240px] rotate-90 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after dark:bg-gradient-to-br dark:from-transparent dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40"></div>
+			<div className="top-2 left-1 -z-20 flex place-items-center absolute h-[100px] w-[180px] rounded-full bg-gradient-radial from-white to-transparent blur-2xl after:absolute after:-z-20 after:h-[280px] after:w-[240px] rotate-90 after:bg-gradient-conic after:from-sky-300 after:via-blue-300 after:blur-2xl after dark:bg-gradient-to-br dark:from-transparent dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40"></div>
 			<h1 className="text-4xl font-bold text-center">My Skills</h1>
 			<div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-x-16 gap-y-14 w-full">
 				<div className="flex items-center justify-between">
@@ -49,7 +49,7 @@ function Skills() {
 				<h1 className="font-medium">Fast Delivery</h1>
 				<h1 className="font-medium">Responsibility</h1>
 			</div>
-			<div className="top-3/4 right-20 flex place-items-center absolute  rounded-full rotate-180 to-transparent -z-20 h-[180px] w-[340px] translate-x-1/3 bg-gradient-conic from-sky-200 via-blue-200 blur-2xl dark:bg-gradient-to-br dark:to-blue-700/10 dark:from-sky-900 dark:via-[#0141ff]/40"></div>
+			<div className="top-3/4 right-20 flex place-items-center absolute  rounded-full rotate-180 to-transparent -z-20 h-[180px] w-[340px] translate-x-1/3 bg-gradient-conic from-sky-300 via-blue-300 blur-2xl dark:bg-gradient-to-br dark:to-blue-700/10 dark:from-sky-900 dark:via-[#0141ff]/40"></div>
 		</div>
 	);
 }

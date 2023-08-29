@@ -4,7 +4,7 @@ import React from "react";
 function Contact() {
 	return (
 		<div id="contact" className="mt-32 w-full px-5 md:px-16 pb-16 relative">
-			<div className="top-3/4 left-5 flex place-items-center absolute rounded-full to-transparent -z-20 h-[150px] w-[140px] translate-x-1/3 bg-gradient-conic from-sky-200 via-blue-200 blur-2xl dark:bg-gradient-to-br dark:to-blue-700/10 dark:from-sky-900 dark:via-[#0141ff]/40"></div>
+			<div className="top-3/4 left-5 flex place-items-center absolute rounded-full to-transparent -z-20 h-[150px] w-[140px] translate-x-1/3 bg-gradient-conic from-sky-300 via-blue-300 blur-2xl dark:bg-gradient-to-br dark:to-blue-700/10 dark:from-sky-900 dark:via-[#0141ff]/40"></div>
 			<h1 className="text-4xl font-bold text-center mb-2">Contact Info</h1>
 			<p className="text-center">
 				Feel free to reach out for collaborations or just a friendly hello.

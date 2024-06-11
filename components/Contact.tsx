@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 
 function Contact() {
 	return (
@@ -15,22 +14,21 @@ function Contact() {
 					<a
 						href="mailto:guendouziyaniss@gmail.com"
 						className="hover:underline"
-						target="_blank"
-					>
+						target="_blank">
 						guendouziyaniss@gmail.com
 					</a>
 				</div>
 				<div>
 					<h6 className="font-medium">Phone</h6>
 					<p>+213 542 662 874</p>
+					<p>+971 583 061 668</p>
 				</div>
 				<div>
 					<h6 className="font-medium">LinkedIn</h6>
 					<Link
 						href="https://www.linkedin.com/in/guendouziyaniss/"
 						className="hover:underline"
-						target="_blank"
-					>
+						target="_blank">
 						@guendouziyaniss
 					</Link>
 				</div>
@@ -39,8 +37,7 @@ function Contact() {
 					<Link
 						href="https://github.com/YanissGnz"
 						className="hover:underline"
-						target="_blank"
-					>
+						target="_blank">
 						@YanissGnz
 					</Link>
 				</div>
@@ -49,8 +46,7 @@ function Contact() {
 					<Link
 						href="https://www.fiverr.com/yanissgnz"
 						className="hover:underline"
-						target="_blank"
-					>
+						target="_blank">
 						@yanissgnz
 					</Link>
 				</div>
@@ -59,8 +55,7 @@ function Contact() {
 					<Link
 						href="https://www.upwork.com/freelancers/~0126fe2ee6278b952a"
 						className="hover:underline"
-						target="_blank"
-					>
+						target="_blank">
 						@Yaniss G.
 					</Link>
 				</div>

@@ -1,22 +1,32 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import pivotpointbms from "@/public/assets/shots/pivotpointbms_shot.png";
-import tesShot from "@/public/assets/shots/tes_shot.png";
-import macosShot from "@/public/assets/shots/macos_shot.png";
 import bazzarShot from "@/public/assets/shots/bazzar_shot.png";
-import homeArtShot from "@/public/assets/shots/home_art_shot.png";
 import clinicShot from "@/public/assets/shots/clinic_shot.png";
+import homeArtShot from "@/public/assets/shots/home_art_shot.png";
+import macosShot from "@/public/assets/shots/macos_shot.png";
+import pivotpointbms from "@/public/assets/shots/pivotpointbms_shot.png";
+import postlyy from "@/public/assets/shots/postlyy_shot.png";
+import tesShot from "@/public/assets/shots/tes_shot.png";
 
 function Work() {
 	return (
 		<div
 			id="work"
-			className="mt-32 flex flex-col items-center gap-10 w-screen px-5 md:px-16 relative scroll-m-16"
-		>
+			className="mt-32 flex flex-col items-center gap-10 w-screen px-5 md:px-16 relative scroll-m-16">
 			<h1 className="text-4xl font-bold">My Work</h1>
 			<div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+				<Link href="https://postlyy.com" target="_blank">
+					<Image src={postlyy} alt="postlyy" className="rounded-md mb-3" />
+					<span className="bg-blue-200/50 dark:bg-blue-700/40 p-1 rounded text-blue-600 dark:text-blue-200">
+						Nov 2023 - Present
+					</span>
+					<h6 className="text-lg font-semibold">Postlyy </h6>
+					<p>
+						All in one platform to create, schedule, and analyze content on X
+						and LinkedIn.
+					</p>
+				</Link>{" "}
 				<Link href="https://pivotpointbms.com" target="_blank">
 					<Image
 						src={pivotpointbms}
@@ -24,7 +34,7 @@ function Work() {
 						className="rounded-md mb-3"
 					/>
 					<span className="bg-blue-200/50 dark:bg-blue-700/40 p-1 rounded text-blue-600 dark:text-blue-200">
-						Jan 2023 - Present
+						Jan 2023 - dec 2023
 					</span>
 					<h6 className="text-lg font-semibold">PivotPoint BMS</h6>
 					<p>An AI powered business management Website.</p>
@@ -45,8 +55,7 @@ function Work() {
 				</Link>{" "}
 				<Link
 					href="https://github.com/YanissGnz/ecommerce_frontend"
-					target="_blank"
-				>
+					target="_blank">
 					<Image
 						src={bazzarShot}
 						alt="pivotpointbms"
@@ -63,8 +72,7 @@ function Work() {
 				</Link>{" "}
 				<Link
 					href="https://github.com/YanissGnz/tes-concept-react-tree"
-					target="_blank"
-				>
+					target="_blank">
 					<Image
 						src={tesShot}
 						alt="pivotpointbms"

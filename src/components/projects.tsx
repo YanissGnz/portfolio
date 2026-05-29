@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 import projectsData from "@/data/projects.json";
 import { Code2, ExternalLink } from "lucide-react";
 
@@ -85,7 +86,7 @@ export function Projects() {
                 {/* Project image */}
                 <div className="md:w-1/2 relative overflow-hidden">
                   <img
-                    src={project.image}
+                    src={project.images[0]}
                     alt={project.title}
                     className="w-full h-64 md:h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -93,6 +94,13 @@ export function Projects() {
                     variants={overlayItem}
                     className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4 gap-3"
                   >
+                    <Link
+                      href={`/projects/${project.slug}`}
+                      className="p-2 rounded-full bg-background/90 hover:text-accent transition-colors"
+                      aria-label={`View ${project.title} details`}
+                    >
+                      <Code2 size={18} />
+                    </Link>
                     <a
                       href={project.github}
                       target="_blank"
@@ -116,9 +124,11 @@ export function Projects() {
 
                 {/* Project info */}
                 <div className="md:w-1/2 p-6 md:p-8 flex flex-col justify-center">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
-                    {project.title}
-                  </h3>
+                  <Link href={`/projects/${project.slug}`}>
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-accent transition-colors cursor-pointer">
+                      {project.title}
+                    </h3>
+                  </Link>
                   <p className="text-muted mb-4 leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((t) => (

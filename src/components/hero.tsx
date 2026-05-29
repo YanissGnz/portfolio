@@ -133,8 +133,8 @@ export function Hero() {
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <div className="w-6 h-10 border-2 border-muted/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-muted/50 rounded-full mt-2" />
+        <div className="w-6 h-10 border-2 rounded-full flex justify-center" style={{ borderColor: "var(--color-muted)", opacity: 0.3 }}>
+          <div className="w-1 h-3 rounded-full mt-2" style={{ backgroundColor: "var(--color-muted)", opacity: 0.5 }} />
         </div>
       </motion.div>
     </section>

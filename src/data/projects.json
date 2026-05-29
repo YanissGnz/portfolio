@@ -1,31 +1,31 @@
 [
   {
-    "title": "Postlyy",
-    "description": "All-in-one platform to create, schedule, and analyze content on X (Twitter) and LinkedIn.",
-    "image": "/project1.png",
-    "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "github": "https://github.com/YanissGnz/postlyy",
-    "demo": "#"
-  },
-  {
-    "title": "PivotPoint BMS",
-    "description": "An AI-powered business management suite (ERP) tailored for SMEs with complex data handling and reporting.",
-    "image": "/project2.png",
-    "tech": ["Next.js", "Redux", "Tailwind CSS", "PostgreSQL"],
-    "github": "https://github.com/YanissGnz/pivotpoint-bms",
-    "demo": "#"
-  },
-  {
     "title": "Bazzar",
-    "description": "A multi-vendor e-commerce website with admin dashboard, analytics, and logistics tracking.",
-    "image": "/project3.png",
+    "description": "A highly responsive, multi-vendor E-commerce platform equipped with a granular admin dashboard, integrated analytics, and logistics tracking.",
+    "image": "/project1.png",
     "tech": ["Next.js", "React", "TypeScript", "MongoDB"],
     "github": "https://github.com/YanissGnz/bazzar",
     "demo": "#"
   },
   {
+    "title": "Tes Clone",
+    "description": "A visually immersive web experience replicating the Tesla interface, integrated with 3D web animations using React Three Fiber.",
+    "image": "/project2.png",
+    "tech": ["Next.js", "React", "Three.js", "Tailwind CSS"],
+    "github": "https://github.com/YanissGnz/tes-clone",
+    "demo": "#"
+  },
+  {
+    "title": "MacOS Clone",
+    "description": "A complex frontend project replicating the native desktop UX/UI elements of macOS inside a web browser.",
+    "image": "/project3.png",
+    "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/YanissGnz/macos-clone",
+    "demo": "#"
+  },
+  {
     "title": "Home Art",
-    "description": "An e-commerce website for home appliances with inventory tracking and ordering system.",
+    "description": "An end-to-end full-stack e-commerce solution engineered for tracking, ordering, and managing home appliance inventories.",
     "image": "/project4.png",
     "tech": ["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS"],
     "github": "https://github.com/YanissGnz/home-art",

@@ -56,16 +56,15 @@ export function Experience() {
           {/* Timeline line */}
           <motion.div
             className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px"
-            style={{ background: "linear-gradient(to bottom, transparent, rgba(6,182,212,0.3), rgba(139,92,246,0.3), transparent)" }}
+            style={{ transformOrigin: "top", background: "linear-gradient(to bottom, transparent, rgba(6,182,212,0.3), rgba(139,92,246,0.3), transparent)" }}
             initial={{ scaleY: 0 }}
             animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            transform-origin="top"
           />
 
           {experienceData.map((exp, idx) => (
             <motion.div
-              key={exp.role}
+              key={idx}
               variants={timelineItem}
               initial="hidden"
               whileInView="visible"

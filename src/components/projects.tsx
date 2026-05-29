@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 import projectsData from "@/data/projects.json";
-import { Code2, ExternalLink } from "lucide-react";
+
 
 const container = {
   hidden: { opacity: 0 },
@@ -22,10 +22,6 @@ const cardItem = {
     scale: 1,
     transition: { duration: 0.6, ease: "easeOut" as const },
   },
-} as const;
-const overlayItem = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.4 } },
 } as const;
 
 export function Projects() {
@@ -64,82 +60,55 @@ export function Projects() {
 
         <motion.div variants={container}>
           {projectsData.map((project, idx) => (
-            <motion.div
+            <Link
+              href={`/projects/${project.slug}`}
               key={project.title}
-              variants={cardItem}
-              whileHover={{ y: -8 }}
-              className="group rounded-2xl border border-border bg-card overflow-hidden hover:border-transparent transition-all duration-300 relative mb-6 last:mb-0"
+              className="block mb-16 last:mb-0"
             >
-              {/* Gradient border on hover */}
-              <div
-                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{
-                  background: "linear-gradient(135deg, rgba(6,182,212,0.4), rgba(139,92,246,0.4))",
-                  padding: "1px",
-                  mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                  maskComposite: "exclude",
-                  WebkitMaskComposite: "xor",
-                }}
-              />
+              <motion.div
+                variants={cardItem}
+                whileHover={{ y: -8 }}
+                className="group rounded-2xl border border-border bg-card overflow-hidden hover:border-transparent transition-all duration-300 relative"
+              >
+                {/* Gradient border on hover */}
+                <div
+                  className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(6,182,212,0.4), rgba(139,92,246,0.4))",
+                    padding: "1px",
+                    mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                    maskComposite: "exclude",
+                    WebkitMaskComposite: "xor",
+                  }}
+                />
 
-              <div className="flex flex-col md:flex-row">
-                {/* Project image */}
-                <div className="md:w-1/2 relative overflow-hidden">
-                  <img
-                    src={project.images[0]}
-                    alt={project.title}
-                    className="w-full h-64 md:h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <motion.div
-                    variants={overlayItem}
-                    className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4 gap-3"
-                  >
-                    <Link
-                      href={`/projects/${project.slug}`}
-                      className="p-2 rounded-full bg-background/90 hover:text-accent transition-colors"
-                      aria-label={`View ${project.title} details`}
-                    >
-                      <Code2 size={18} />
-                    </Link>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-full bg-background/90 hover:text-accent transition-colors"
-                      aria-label="GitHub repo"
-                    >
-                      <Code2 size={18} />
-                    </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-full bg-background/90 hover:text-purple transition-colors"
-                      aria-label="Live demo"
-                    >
-                      <ExternalLink size={18} />
-                    </a>
-                  </motion.div>
-                </div>
+                <div className="flex flex-col md:flex-row">
+                  {/* Project image */}
+                  <div className="md:w-1/2 relative overflow-hidden">
+                    <img
+                      src={project.images[0]}
+                      alt={project.title}
+                      className="w-full h-64 md:h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
 
-                {/* Project info */}
-                <div className="md:w-1/2 p-6 md:p-8 flex flex-col justify-center">
-                  <Link href={`/projects/${project.slug}`}>
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-accent transition-colors cursor-pointer">
+                  {/* Project info */}
+                  <div className="md:w-1/2 p-6 md:p-8 flex flex-col justify-center">
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
                       {project.title}
                     </h3>
-                  </Link>
-                  <p className="text-muted mb-4 leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((t) => (
-                      <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-background border border-border text-muted">
-                        {t}
-                      </span>
-                    ))}
+                    <p className="text-muted mb-4 leading-relaxed">{project.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map((t) => (
+                        <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-background border border-border text-muted">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </motion.div>
       </div>

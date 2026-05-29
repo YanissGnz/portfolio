@@ -35,11 +35,11 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-            scrolled
-              ? "py-3 bg-nav-bg backdrop-blur-xl border-b"
-              : "py-5 bg-transparent"
-          )}
-          style={{ borderBottomColor: "var(--color-border)", opacity: scrolled ? 0.5 : 1 }}
+        scrolled
+          ? "py-3 bg-nav-bg backdrop-blur-xl border-b"
+          : "py-5 bg-transparent"
+      )}
+      style={{ borderBottomColor: "var(--color-border)" }}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <Link
@@ -89,7 +89,7 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="md:hidden absolute top-full left-0 right-0 bg-nav-bg backdrop-blur-xl border-b overflow-hidden"
-            style={{ borderBottomColor: "var(--color-border)", opacity: 0.5 }}
+            style={{ borderBottomColor: "var(--color-border)" }}
           >
             <div className="py-4 px-6 space-y-3">
               {navItems.map((item, idx) => (

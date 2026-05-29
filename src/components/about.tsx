@@ -67,7 +67,8 @@ export function About() {
           </div>
 
           <motion.div variants={imageItem} className="relative flex justify-center">
-            <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl border border-border overflow-hidden relative" style={{ background: "linear-gradient(135deg, var(--color-accent), var(--color-purple))", opacity: 0.2 }}>
+            <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden relative border border-border">
+              <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, var(--color-accent), var(--color-purple))" }} />
               <img
                 src="/avatar.png"
                 alt="Yaniss Guendouzi"

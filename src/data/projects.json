@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Postlyy",
+    "description": "All-in-one platform to create, schedule, and analyze content on X (Twitter) and LinkedIn.",
+    "image": "/project1.png",
+    "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/YanissGnz/postlyy",
+    "demo": "#"
+  },
+  {
+    "title": "PivotPoint BMS",
+    "description": "An AI-powered business management suite (ERP) tailored for SMEs with complex data handling and reporting.",
+    "image": "/project2.png",
+    "tech": ["Next.js", "Redux", "Tailwind CSS", "PostgreSQL"],
+    "github": "https://github.com/YanissGnz/pivotpoint-bms",
+    "demo": "#"
+  },
+  {
+    "title": "Bazzar",
+    "description": "A multi-vendor e-commerce website with admin dashboard, analytics, and logistics tracking.",
+    "image": "/project3.png",
+    "tech": ["Next.js", "React", "TypeScript", "MongoDB"],
+    "github": "https://github.com/YanissGnz/bazzar",
+    "demo": "#"
+  },
+  {
+    "title": "Home Art",
+    "description": "An e-commerce website for home appliances with inventory tracking and ordering system.",
+    "image": "/project4.png",
+    "tech": ["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS"],
+    "github": "https://github.com/YanissGnz/home-art",
+    "demo": "#"
+  }
+]

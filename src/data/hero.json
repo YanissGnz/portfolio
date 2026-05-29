@@ -1,0 +1,19 @@
+{
+  "name": "Guendouzi M. Yaniss",
+  "title": "Front End Developer",
+  "tagline": "Crafting immersive web experiences with React and Next.js.",
+  "description": "I'm a computer science graduate and accomplished front-end developer with over 5 years of experience. My focus is on utilizing React and Next.js to craft immersive web experiences. With a strong foundation in computer science, I'm driven to create user-friendly and visually impressive applications. My goal is to continually push the boundaries of web development and contribute meaningful solutions to the digital landscape.",
+  "avatar": "/avatar.png",
+  "social": {
+    "github": "https://github.com/YanissGnz",
+    "linkedin": "https://linkedin.com/in/guendouziyaniss",
+    "facebook": "https://facebook.com/YanissGnz",
+    "fiverr": "https://fiverr.com/yanissgnz",
+    "upwork": "https://upwork.com/freelancers/~YanissGnz"
+  },
+  "email": "guendouziyaniss@gmail.com",
+  "phone": "+213 542 662 874",
+  "location": "Algeria",
+  "ctaPrimary": "View My Work",
+  "ctaSecondary": "Get In Touch"
+}

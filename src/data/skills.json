@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Core",
+    "skills": [
+      { "name": "React / Next.js", "level": "Expert" },
+      { "name": "TypeScript", "level": "Expert" },
+      { "name": "Redux", "level": "Expert" },
+      { "name": "Angular", "level": "Proficient" },
+      { "name": "React Native", "level": "Intermediate" },
+      { "name": "Node.js", "level": "Skilled" }
+    ]
+  },
+  {
+    "category": "Styling & UI",
+    "skills": [
+      { "name": "TailwindCSS", "level": "Expert" },
+      { "name": "shadcn/ui", "level": "Expert" },
+      { "name": "Responsive Design", "level": "Expert" },
+      { "name": "CSS Modules", "level": "Proficient" },
+      { "name": "Three.js", "level": "Proficient" }
+    ]
+  },
+  {
+    "category": "DevOps & Tools",
+    "skills": [
+      { "name": "Git / GitHub", "level": "Expert" },
+      { "name": "Docker", "level": "Proficient" },
+      { "name": "Kubernetes", "level": "Proficient" },
+      { "name": "CI/CD", "level": "Proficient" },
+      { "name": "Agile / Scrum", "level": "Proficient" }
+    ]
+  },
+  {
+    "category": "Soft Skills",
+    "skills": [
+      { "name": "Problem Solving", "level": "Expert" },
+      { "name": "Adaptability", "level": "Expert" },
+      { "name": "Teamwork", "level": "Expert" },
+      { "name": "Creativity", "level": "Expert" },
+      { "name": "Fast Delivery", "level": "Expert" },
+      { "name": "Responsibility", "level": "Expert" }
+    ]
+  }
+]

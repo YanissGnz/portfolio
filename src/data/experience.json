@@ -1,30 +1,30 @@
 [
   {
-    "role": "Frontend Developer",
+    "role": "Web developer",
     "company": "Namla",
     "period": "Sep 2023 — Present",
     "description": "Currently working on the development of the Namla web application — a platform that manages the deployment of edge computing applications. Architecting and building frontend for enterprise-grade dashboards."
   },
   {
-    "role": "Frontend Developer",
+    "role": "Web developer",
     "company": "Postlyy",
     "period": "Nov 2023 — Jun 2024",
     "description": "Created and maintained the front-end of Postlyy, a social media management tool that allows users to schedule and publish posts on multiple platforms."
   },
   {
-    "role": "Frontend Developer",
+    "role": "Web developer",
     "company": "PivotPoint BMS",
     "period": "Jan 2023 — Dec 2023",
     "description": "Co-founded PivotPoint BMS, an ERP software for small and medium-sized businesses. Developed the front-end using Next.js, Redux, and Tailwind CSS."
   },
   {
-    "role": "Full-Stack Developer",
+    "role": "Web developer",
     "company": "Anti-Cancer Clinic",
     "period": "Jan 2022 — Dec 2022",
     "description": "Created a management solution for clinic staff and patients with statistics and activity tracking. Implemented multi-account access with different specialties and privileges."
   },
   {
-    "role": "Full-Stack Developer",
+    "role": "Web developer",
     "company": "Unetech",
     "period": "Jan 2019 — Dec 2021",
     "description": "Participated in pre-project analysis and technical assessments. Built reusable code to minimize costs. Scheduled meetings with clients to discuss website design preferences and requirements."

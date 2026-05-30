@@ -130,15 +130,12 @@ export default function ProjectDetail() {
             <FaGithub size={16} />
             Code
           </a>
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-accent to-purple text-background hover:opacity-90 transition-opacity"
+          <button
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-accent to-purple text-background opacity-50 cursor-not-allowed"
           >
             <ExternalLink size={16} />
             Live Demo
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

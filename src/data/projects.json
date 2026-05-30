@@ -6,7 +6,7 @@
     "fullDescription": "Bazzar is a fully-featured multi-vendor marketplace built from the ground up. It includes a comprehensive admin dashboard with real-time analytics, vendor management system, product inventory tracking, order management, and integrated logistics tracking with live updates. The platform supports multiple payment gateways and provides a seamless shopping experience for customers.",
     "images": ["/project1.png", "/project1.png", "/project1.png"],
     "tech": ["Next.js", "React", "TypeScript", "MongoDB"],
-    "github": "https://github.com/YanissGnz/bazzar",
+    "github": "https://github.com/YanissGnz/hospital_managing_web",
     "demo": "#",
     "role": "Lead Developer"
   },
@@ -17,7 +17,7 @@
     "fullDescription": "Tes Clone is a pixel-perfect recreation of the Tesla website with immersive 3D vehicle models and smooth animations. Built with React Three Fiber for real-time 3D rendering, the site features interactive car configurators, color customization, and a showroom experience. Every detail from the scroll animations to the vehicle models has been carefully crafted to match the original Tesla experience.",
     "images": ["/project2.png", "/project2.png", "/project2.png"],
     "tech": ["Next.js", "React", "Three.js", "Tailwind CSS"],
-    "github": "https://github.com/YanissGnz/tes-clone",
+    "github": "https://github.com/YanissGnz/tes-concept-react-tree",
     "demo": "#",
     "role": "Frontend Developer"
   },
@@ -28,7 +28,7 @@
     "fullDescription": "MacOS Clone recreates the macOS desktop experience in the browser with remarkable fidelity. Features include a functional dock with app launch animations, a menu bar with real-time clock, draggable and resizable windows, a desktop with wallpaper, and working apps including a calculator, terminal, and notes. The project demonstrates deep understanding of UI/UX patterns and advanced CSS/JavaScript techniques.",
     "images": ["/project3.png", "/project3.png", "/project3.png"],
     "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "github": "https://github.com/YanissGnz/macos-clone",
+    "github": "https://github.com/YanissGnz/macos",
     "demo": "#",
     "role": "Frontend Developer"
   },
@@ -38,8 +38,8 @@
     "description": "An end-to-end full-stack e-commerce solution engineered for tracking, ordering, and managing home appliance inventories.",
     "fullDescription": "Home Art is a complete e-commerce platform designed for home appliance retailers. It features a product catalog with advanced filtering, shopping cart with real-time price calculations, order management system, user authentication, and an admin panel for inventory management. The platform is optimized for performance with server-side rendering and incremental static regeneration for fast page loads.",
     "images": ["/project4.png", "/project4.png", "/project4.png"],
-    "tech": ["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS"],
-    "github": "https://github.com/YanissGnz/home-art",
+    "tech": ["Reactjs", "Node.js", "MySQL", "Material UI"],
+    "github": "https://github.com/YanissGnz/Home_Art",
     "demo": "#",
     "role": "Full-Stack Developer"
   }

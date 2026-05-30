@@ -43,7 +43,12 @@ export function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <Link
-          href="#hero"
+          href="/"
+          scroll={false}
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "/#hero";
+          }}
           className="text-xl font-bold tracking-tight relative"
         >
           <span className="text-gradient">&lt;YG /&gt;</span>

@@ -13,39 +13,17 @@ export function Skills() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const levelColors: Record<string, string> = {
-    Expert: "#06b6d4",
-    Proficient: "#8b5cf6",
-    Skilled: "#60a5fa",
-    Intermediate: "#93c5fd",
-  };
-
   return (
-    <section id="skills" className="py-32 relative overflow-hidden" ref={ref}>
-      {/* Background orbs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute top-0 left-1/4 w-80 h-80 rounded-full blur-3xl animate-float-slow"
-          style={{ background: "radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%)" }}
-        />
-        <div
-          className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full blur-3xl animate-float-medium"
-          style={{ background: "radial-gradient(circle, rgba(6,182,212,0.1) 0%, transparent 70%)" }}
-        />
-      </div>
-
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+    <div ref={ref}>
+      <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={headingItem}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
-          <motion.p variants={headingItem} className="text-accent font-mono text-sm mb-3">
-            02. SKILLS
-          </motion.p>
-          <motion.h2 variants={headingItem} className="text-3xl sm:text-4xl font-bold">
-            My Skills
+          <motion.h2 variants={headingItem} className="text-2xl sm:text-3xl font-bold">
+            Skills & Technologies
           </motion.h2>
         </motion.div>
 
@@ -60,7 +38,7 @@ export function Skills() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -84,7 +62,6 @@ function SkillCard({ category, catIdx, isInView }: { category: typeof skillsData
       whileHover={{ y: -4 }}
       className="p-6 rounded-2xl border border-border bg-card hover:border-transparent transition-all duration-300 group relative overflow-hidden"
     >
-      {/* Gradient border on hover */}
       <div
         className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         style={{
@@ -100,45 +77,26 @@ function SkillCard({ category, catIdx, isInView }: { category: typeof skillsData
       </h3>
       <div className="space-y-3 relative z-10">
         {category.skills.map((skill) => (
-          <SkillBar key={skill.name} skill={skill} isInView={cardInView} levelColors={levelColors} />
+          <SkillBar key={skill.name} skill={skill} levelColors={levelColors} />
         ))}
       </div>
     </motion.div>
   );
 }
 
-function SkillBar({ skill, isInView, levelColors }: { skill: typeof skillsData[0]["skills"][0]; isInView: boolean; levelColors: Record<string, string> }) {
-  const barRef = useRef(null);
-  const barInView = useInView(barRef, { once: true, margin: "-20px" });
-
-  const width = skill.level === "Expert" ? 100 : skill.level === "Proficient" ? 80 : skill.level === "Skilled" ? 65 : 45;
-
+function SkillBar({ skill, levelColors }: { skill: typeof skillsData[0]["skills"][0]; levelColors: Record<string, string> }) {
   return (
-    <motion.div ref={barRef} initial={{ opacity: 0, x: -10 }} animate={barInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.3, delay: 0.1 }}>
-      <div className="flex justify-between items-center mb-1">
-        <span className="text-sm">{skill.name}</span>
-        <span
-          className="text-xs px-2 py-0.5 rounded-full"
-          style={{
-            background: `${levelColors[skill.level]}20`,
-            color: levelColors[skill.level],
-          }}
-        >
-          {skill.level}
-        </span>
-      </div>
-      <div className="h-1.5 rounded-full bg-border overflow-hidden">
-        <motion.div
-          className="h-full rounded-full"
-          style={{
-            width: `${width}%`,
-            background: `linear-gradient(90deg, #06b6d4, #8b5cf6)`,
-          }}
-          initial={{ width: 0 }}
-          animate={barInView ? { width: `${width}%` } : {}}
-          transition={{ duration: 1, delay: 0.3 }}
-        />
-      </div>
-    </motion.div>
+    <div className="flex justify-between items-center">
+      <span className="text-sm">{skill.name}</span>
+      <span
+        className="text-xs px-2 py-0.5 rounded-full"
+        style={{
+          background: `${levelColors[skill.level]}20`,
+          color: levelColors[skill.level],
+        }}
+      >
+        {skill.level}
+      </span>
+    </div>
   );
 }

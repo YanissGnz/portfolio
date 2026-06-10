@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import contactData from "@/data/contact.json";
 import heroData from "@/data/hero.json";
-import { Mail, MapPin, Phone, Download } from "lucide-react";
+import { Mail, Phone, Download } from "lucide-react";
 import { FaGlobe, FaBriefcase } from "react-icons/fa";
 
 const container = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.15 } } } as const;
@@ -32,7 +32,7 @@ export function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contact" className="py-32 relative overflow-hidden" ref={ref}>
+    <section id="contact" className="py-32 relative overflow-hidden snap-start" ref={ref}>
       {/* Background orbs */}
       <div className="absolute inset-0 pointer-events-none">
         <div
@@ -51,7 +51,7 @@ export function Contact() {
           variants={container}
         >
           <motion.p variants={headingItem} className="text-accent font-mono text-sm mb-3">
-            06. CONTACT
+            03. CONTACT
           </motion.p>
           <motion.h2 variants={headingItem} className="text-3xl sm:text-4xl font-bold mb-4">
             {contactData.heading}
@@ -108,15 +108,7 @@ export function Contact() {
               <Download size={18} />
               Download Resume
             </a>
-            <a
-              href={`https://maps.google.com/?q=${encodeURIComponent(heroData.location)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-full hover:border-purple hover:text-purple transition-colors"
-            >
-              <MapPin size={18} />
-              <span>{heroData.location}</span>
-            </a>
+
           </motion.div>
         </motion.div>
       </div>

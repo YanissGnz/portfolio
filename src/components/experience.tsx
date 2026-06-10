@@ -23,35 +23,8 @@ export function Experience() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="experience" className="py-32 relative overflow-hidden" ref={ref}>
-      {/* Background orbs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute top-1/3 left-1/3 w-96 h-96 rounded-full blur-3xl animate-float-fast"
-          style={{ background: "radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 70%)" }}
-        />
-        <div
-          className="absolute bottom-1/3 right-1/3 w-96 h-96 rounded-full blur-3xl animate-float-slow"
-          style={{ background: "radial-gradient(circle, rgba(6,182,212,0.08) 0%, transparent 70%)" }}
-        />
-      </div>
-
+    <div ref={ref}>
       <div className="max-w-4xl mx-auto px-6 relative z-10">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={container}
-          className="text-center mb-16"
-        >
-          <motion.p variants={headingItem} className="text-accent font-mono text-sm mb-3">
-            04. EXPERIENCE
-          </motion.p>
-          <motion.h2 variants={headingItem} className="text-3xl sm:text-4xl font-bold">
-            Work History
-          </motion.h2>
-        </motion.div>
-
         <div className="relative">
           {/* Timeline line */}
           <motion.div
@@ -120,6 +93,6 @@ export function Experience() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

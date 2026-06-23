@@ -1,12 +1,12 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import projectsData from "@/data/projects.json";
+import { motion } from "framer-motion";
 import { ArrowLeft, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion";
-import projectsData from "@/data/projects.json";
+import { useParams } from "next/navigation";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -23,7 +23,7 @@ export default function ProjectDetail() {
   const [current, setCurrent] = useState(0);
 
   return (
-    <section className="min-h-screen pt-24 pb-16">
+    <section className="min-h-screen pt-24 pb-20">
       <div className="max-w-5xl mx-auto px-6">
         <Link
           href="/"
@@ -119,7 +119,7 @@ export default function ProjectDetail() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="flex gap-4"
+          className="flex gap-4 pb-16"
         >
           <a
             href={project.github}
@@ -130,12 +130,14 @@ export default function ProjectDetail() {
             <FaGithub size={16} />
             Code
           </a>
+          <Link href={project.demo } target="_blank" rel="noopener noreferrer">  
           <button
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-accent to-purple text-background opacity-50 cursor-not-allowed"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-accent to-purple text-background"
           >
             <ExternalLink size={16} />
             Live Demo
-          </button>
+            </button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -1,5 +1,15 @@
 [
   {
+    "title": "Postlyy",
+    "slug": "postlyy",
+    "description": "A B2C/prosumer SaaS for X (Twitter) and LinkedIn content management — create, schedule, and analyze posts in one platform",
+    "fullDescription": "Postlyy is a modern social media platform designed to foster meaningful connections and engagement. It features a clean, intuitive interface with real-time updates, seamless sharing capabilities, and a robust community-driven approach. Users can create diverse content, interact with others through comments and likes, and discover new interests through personalized feeds.",
+    "images": ["/postlyy.png"],
+    "tech": ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Auth.js" ],
+    "github": "https://github.com/YanissGnz/postlyy",
+    "demo": "https://postlyy.yanissgnz.com/",
+    "role": "Lead Developer"
+  },{
     "title": "Bazzar",
     "slug": "bazzar",
     "description": "A highly responsive, multi-vendor E-commerce platform equipped with a granular admin dashboard, integrated analytics, and logistics tracking.",

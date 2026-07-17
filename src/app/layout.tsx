@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { ClientLayout } from "@/components/client-layout";
 import { Navbar } from "@/components/navbar";
 import "./globals.css";
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </ClientLayout>
+        <Analytics />
       </body>
     </html>
   );
